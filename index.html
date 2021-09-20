@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de classificação</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+  <h1>Tabela de classificação</h1>
+
+  <div class=inputs>
+    <input type="text" name='novoJogador' id="nomeNovoJogador" placeholder="Insira o nome do jogador">
+    <input type="text" name='fotoJogador' id="fotoNovoJogador" placeholder="Insira a url da foto">
+    <button onclick="adicionarNovoJogador(jogadores)" name='novoJogador' id="novoJogador">Adicionar</button>
+    <button id="zerarPontos" onclick="resetarPontos(jogadores)">Zerar pontos</button>
+  </div>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Foto</th>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+      <!--   <tr>
+        <td>Paulo</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>24</td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+      <tr>
+        <td>Rafa</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>2</td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+    </tbody> -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
